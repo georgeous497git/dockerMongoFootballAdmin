@@ -25,6 +25,8 @@ ls mongoDB/footballAdminVolumen
 ```sh
 docker pull mongo:latest
 ```
+<img src="https://github.com/georgeous497git/dockerMongoFootballAdmin/blob/develop/images/4-mongoPull.png" width="500" height="250">
+
 
 5. Execute the following command to start the Docker Image for Mongo (**Consider to use the absolute path for the dedicated folder and use the name of the mongo instance 'football-admin-mongo'**)
 ```sh
