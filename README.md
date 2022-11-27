@@ -4,11 +4,10 @@ Instructions for Docker instance for FootballAdmin Application
 
 ## STEPS
 
-1. Install Docker Desktop
+1. Install & Start Docker (Desktop)
+<img src="https://github.com/georgeous497git/dockerMongoFootballAdmin/blob/develop/images/1-dockerVersion.png" width="800" height="70">
 
-2. Start Docker
-
-3. Create a dedicated local folder for a Docker Volumen
+2. Create a dedicated local folder for a Docker Volumen
 
 Example:
 ```sh
