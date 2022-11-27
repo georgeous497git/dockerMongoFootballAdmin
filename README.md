@@ -4,19 +4,21 @@ Instructions for Docker instance for FootballAdmin Application
 
 ## STEPS
 
-1. Install Docker CLI or Docker Desktop
+1. Install Docker Desktop
 
-2. Create a local dedicated folder for a Docker Volumen
+2. Start Docker
+
+3. Create a dedicated local folder for a Docker Volumen
 
 Example:
 ```sh
-mkdir ~/mongoDB/mongoVolumen
+mkdir -p mongoDB/footballAdminVolumen
 ```
 
-3. Go to the created folder
+3. Validate the folder creation
 Example:
 ```sh
-cd ~/mongoDB/mongoVolumen
+ls mongoDB/footballAdminVolumen
 ```
 
 4. Get the latest Docker Image for MongoDB
@@ -24,9 +26,9 @@ cd ~/mongoDB/mongoVolumen
 docker pull mongo:latest
 ```
 
-5. Execute the following command to start the Docker Image for Mongo (Consider to use the path from the folder created and respect the name of the mongo instance 'football-admin-mongo')
+5. Execute the following command to start the Docker Image for Mongo (**Consider to use the absolute path for the dedicated folder and use the name of the mongo instance 'football-admin-mongo'**)
 ```sh
-docker run -it -v ~/mongoDB/mongoVolumen:/data/db -p 27017:27017 --name football-admin-mongo -d mongo
+docker run -it -v /Users/lambda/Revisen/mongoDB/footballAdminVolumen:/data/db -p 27017:27017 --name football-admin-mongo -d mongo
 ```
 
 6. Execute the following command to enter to the Mongo CLI
